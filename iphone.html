@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Sunrise and Sunset</title>
+    <link rel="stylesheet" href="iphone.css">
+    <script src='iphone.js'></script>
+</head>
+
+    
+<body style="max-width:400px" onload="startTime()" >
+    <div class="backgroundImageCVR">
+        <div class ="circle"></div>
+        <div class ="background-image"></div>
+<!-- Content goes here -->
+    <div class='content'><h1>Time: <span id='clock'> </span></h1>
+    <div class ="year"><p><span id='year1'><script>
+    var currentTime = new Date();
+     var year = currentTime.getFullYear();
+    document.write(year);
+    </script></span></p></div>
+    
+    <p class ="date"><span>
+   <script>
+    var d = new Date();
+var n = d.getDate();
+   document.write(n);
+   </script>
+
+<script> var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+];
+
+var d = new Date();
+document.write("" + monthNames[d.getMonth()]);</script>
+</span></p>
+    
+    <p>Sun up: 07:05</p>
+    <p>Sun down: 18:11</p>
+     </div>
+    </div>
+    
+    <div class="footer">
+    <div class="container">
+        <ul>
+            <a href="About.html"><li> About </li></a>
+            <a><li> Calendar</li></a>
+            <a><li> Country: Sweden</li></a>
+        </ul>
+    </div>
+  </div>
+    
+</body>
+</html>
